@@ -1,0 +1,12 @@
+#!/bin/sh
+'''exec' "/Users/tobiaswissmuller/Projects/My Projects/medium-resources/2021-10-xx How to Buy a Playstation 5 in Your Sleep/code/seleniumpython/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+
+from setuptools.command.easy_install import main
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
